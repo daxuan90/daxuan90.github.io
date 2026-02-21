@@ -1,0 +1,26 @@
+title: 轩的博客
+author: 轩爱写代码
+description: 离梦想再近一点
+
+url: "https://daxuan90.github.io"  # 替换为你的 GitHub 用户名
+baseurl: ""
+
+# 构建设置
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 插件
+plugins:
+  - jekyll-feed
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+
+# 分页（可选）
+permalink: /:year/:month/:day/:title/

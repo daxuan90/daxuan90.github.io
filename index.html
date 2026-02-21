@@ -1,0 +1,17 @@
+---
+layout: default
+title: 文章
+---
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+
+  {% if site.posts.size == 0 %}
+  <p class="empty-state">还没有文章，去 <code>_posts/</code> 目录下创建第一篇吧。</p>
+  {% endif %}
+</ul>
